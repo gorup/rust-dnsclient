@@ -12,6 +12,9 @@ edition = "2018"
 
 [dependencies]
 async-std = "1"
-dnssector = { path = "../dnssector" }
 rand = "0.7"
 rustversion = "1.0"
+
+[dependencies.dnssector]
+git = "https://github.com/gorup/dnssector"
+branch = "master"
