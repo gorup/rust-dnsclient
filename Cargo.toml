@@ -12,6 +12,6 @@ edition = "2018"
 
 [dependencies]
 async-std = "1"
-dnssector = "0.1"
+dnssector = { path = "../dnssector" }
 rand = "0.7"
 rustversion = "1.0"

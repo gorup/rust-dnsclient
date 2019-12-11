@@ -178,7 +178,7 @@ impl DNSClient {
         Ok(ips)
     }
 
-    pub async fn query_txt(&self, name: &str) -> Result<Vec<String>, io::Error> {
+    pub async fn query_txt(&self, name: &str) -> Result<Vec<Vec<u8>>, io::Error> {
         let parsed_query = dnssector::gen::query(
             name.as_bytes(),
             Type::TXT,
